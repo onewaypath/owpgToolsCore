@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "owpgTools",
+    name: "owpgToolsCore",
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
@@ -15,9 +15,6 @@ let package = Package(
         .target(
             name: "owpgToolsCore",
             dependencies: []),
-        .target(
-            name: "owpgTools",
-            dependencies: ["owpgToolsCore"]),
         .testTarget(
             name: "owpgToolsTests",
             dependencies: ["owpgTools"]),
